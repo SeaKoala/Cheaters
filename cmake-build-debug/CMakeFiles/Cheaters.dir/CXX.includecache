@@ -9,4 +9,18 @@
 C:/Users/aknk0/Documents/College/312/Cheaters/main.cpp
 iostream
 -
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+string.h
+-
+unistd.h
+-
+time.h
+-
+fstream
+-
 
