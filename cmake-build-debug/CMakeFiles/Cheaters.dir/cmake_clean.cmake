@@ -1,8 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Cheaters.dir/file.cpp.obj"
   "CMakeFiles/Cheaters.dir/main.cpp.obj"
-  "Cheaters.pdb"
   "Cheaters.exe"
   "Cheaters.exe.manifest"
+  "Cheaters.pdb"
   "libCheaters.dll.a"
 )
 

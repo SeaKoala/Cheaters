@@ -6,57 +6,54 @@
 #include <unistd.h>
 #include <time.h>
 #include <fstream>
+#include <vector>
+#include <dirent.h>
+#include "file.h"
 
 
 using namespace std;
 
+int getdir (string dir, vector<string> &files);
 int parse(string filename, int n, int start);
 int getWordCount(string filename);
 
 int main(int argc, char *argv[]) {
-    char fName[] = "catchmeifyoucan.txt";
+    string dir = string("sm_doc_set");
+    vector<string> files = vector<string>();
+    getdir(dir,files);
+//    for (unsigned int i = 2;i < files.size();i++) {
+//
+//    }
+    string path = dir + "\\" + files[3];
+    file f1 (path);
+    cout << f1.getName() << f1.getWordCount()<<endl;
+    int n = 5;
+    for (int i = 0; i < f1.getWordCount() - n + 1; i++) {
+        f1.parse(n, i);
+    }
+    f1.printChunks();
+    return 0;
+}
+
+
+int getdir (string dir, vector<string> &files){
+    DIR *dp;
+    struct dirent *dirp;
+    if((dp  = opendir(dir.c_str())) == NULL) {
+        cout << "Error(" << errno << ") opening " << dir << endl;
+        return errno;
+    }
+
+    while ((dirp = readdir(dp)) != NULL) {
+        files.push_back(string(dirp->d_name));
+    }
+    closedir(dp);
+    return 0;
+}
+
+
 //    strcpy(fName, argv[1]);
-    printf("fileName: %s\n", fName);
 //    const int n  = atoi(argv[2]); //set to a smaller number for debugging
 //    printf("%d\n", n);
-int wordCount = getWordCount(fName);
-int n = 5;
-    for(int i=0; i< wordCount-n+1; i++) {
-        parse(fName, n, i);
-    }
-    return 0;
-}
 
 
-int parse(string filename, int n, int start)
-{
-    int count =0;
-    fstream file;
-    string phrase, word;
-    file.open(filename.c_str());
-        while (file >> word)
-        {
-            if(start> count){
-                count++;
-                continue;
-            }
-            phrase += word;
-            count++;
-            if((count-start)%n == 0){
-                cout << phrase<<endl;
-                break;
-            }
-        }
-    return 0;
-}
-
-int getWordCount(string filename){
-    int count =0;
-    fstream file;
-    string word;
-    file.open(filename.c_str());
-    while (file >> word) {
-        count++;
-    }
-    return count;
-}

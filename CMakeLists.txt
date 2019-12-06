@@ -3,4 +3,4 @@ project(Cheaters)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Cheaters main.cpp)
+add_executable(Cheaters main.cpp file.cpp file.h)

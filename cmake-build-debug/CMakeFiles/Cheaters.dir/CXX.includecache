@@ -6,7 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/aknk0/Documents/College/312/Cheaters/main.cpp
+C:/Users/SeaKoala/Documents/College/312/Cheaters/file.h
+iostream
+-
+string
+-
+vector
+-
+fstream
+-
+algorithm
+-
+
+C:/Users/SeaKoala/Documents/College/312/Cheaters/main.cpp
 iostream
 -
 stdio.h
@@ -23,4 +35,10 @@ time.h
 -
 fstream
 -
+vector
+-
+dirent.h
+-
+file.h
+C:/Users/SeaKoala/Documents/College/312/Cheaters/file.h
 

@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug"/>
+				<Option working_dir="C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug"/>
+				<Option working_dir="C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Cheaters">
-				<Option output="C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Cheaters.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug"/>
+				<Option output="C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Cheaters.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -42,15 +42,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cheaters"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cheaters"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Cheaters/fast">
-				<Option output="C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Cheaters.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug"/>
+				<Option output="C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Cheaters.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -63,27 +63,33 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cheaters/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cheaters/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug"/>
+				<Option working_dir="C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/aknk0/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/aknk0/Documents/College/312/Cheaters/main.cpp">
+		<Unit filename="C:/Users/SeaKoala/Documents/College/312/Cheaters/file.cpp">
 			<Option target="Cheaters"/>
 		</Unit>
-		<Unit filename="C:/Users/aknk0/Documents/College/312/Cheaters/CMakeLists.txt">
+		<Unit filename="C:/Users/SeaKoala/Documents/College/312/Cheaters/file.h">
+			<Option target="Cheaters"/>
+		</Unit>
+		<Unit filename="C:/Users/SeaKoala/Documents/College/312/Cheaters/main.cpp">
+			<Option target="Cheaters"/>
+		</Unit>
+		<Unit filename="C:/Users/SeaKoala/Documents/College/312/Cheaters/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
