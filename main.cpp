@@ -10,6 +10,7 @@
 #include <dirent.h>
 #include "file.h"
 #include "hashEntry.h"
+#include "plag.h"
 
 using namespace std;
 
@@ -19,12 +20,12 @@ int getWordCount(string filename);
 
 
 int main(int argc, char *argv[]) {
-    int n = 5;
+    int n = 7;
     int tableSize = 4999;
     int hashIndex = 0;
     long key =0;
 
-
+    vector<plag> plagerisms;
     vector<hashEntry> table[tableSize];
     int totalChunks =0;
     string dir = string("med_doc_set");
@@ -34,6 +35,7 @@ int main(int argc, char *argv[]) {
     for (unsigned int i = 2;i < paths.size();i++) {
         files.push_back(paths[i]);
     }
+    cout << "Checking these files for plagerism...\n";
     for(int i=2; i< files.size(); i++){
         cout<<files[i].getName()<<endl;
             for (int k = 0; k < files[i].getWordCount() - n + 1; k++) {
@@ -52,34 +54,34 @@ int main(int argc, char *argv[]) {
     for(int i=0; i< tableSize; i++){
         for(int j=0; j< table[i].size(); j++){
             for(int k=j+1; k<table[i].size(); k++){
-                if(table[i].at(j).chunk == table[i].at(k).chunk){
-                    cout<< table[i].at(j).chunk << "=="<< table[i].at(k).chunk << "-----" << table[i].at(j).fileName << "=="<< table[i].at(k).fileName<<endl;
+                if(table[i].at(j).chunk == table[i].at(k).chunk && table[i].at(j).fileName != table[i].at(k).fileName){
+//                  cout<< table[i].at(j).chunk << "=="<< table[i].at(k).chunk << "-----" << table[i].at(j).fileName << "=="<< table[i].at(k).fileName<<endl;
+                    int plagIndex = -1;
+                    string fileNames = table[i].at(j).fileName + ", "+ table[i].at(k).fileName;
+                    for(int p=0; p<plagerisms.size(); p++){
+                        if(plagerisms[p].fileNames == fileNames){
+                            plagIndex=p;
+                            break;
+                        }
+                    }
+                    if(plagIndex == -1){
+                        plagIndex = plagerisms.size();
+                        plagerisms.push_back(plag(fileNames));
+                        plagerisms.at(plagIndex).copyCount++;
+                    }
+                    else{
+                        plagerisms.at(plagIndex).copyCount++;
+                    }
                 }
             }
         }
-        cout<<"+++\n";
     }
 
-//    for(int i=0; i< tableSize; i++){
-//        for(int k=0; k< table[i].size(); k++){
-//            cout<< table[i].at(k).chunk<<"--"<<table[i].at(k).key<<"--"<<table[i].at(k).fileName<<endl;
-//        }
-//        cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++\n";
-//    }
+    for(int i=0; i< plagerisms.size(); i++){
+        cout<< plagerisms[i].copyCount << ": "<< plagerisms[i].fileNames<<endl;
+    }
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 int getdir (string dir, vector<string> &files){

@@ -122,33 +122,6 @@ Cheaters/fast:
 	$(MAKE) -f CMakeFiles\Cheaters.dir\build.make CMakeFiles/Cheaters.dir/build
 .PHONY : Cheaters/fast
 
-file.obj: file.cpp.obj
-
-.PHONY : file.obj
-
-# target to build an object file
-file.cpp.obj:
-	$(MAKE) -f CMakeFiles\Cheaters.dir\build.make CMakeFiles/Cheaters.dir/file.cpp.obj
-.PHONY : file.cpp.obj
-
-file.i: file.cpp.i
-
-.PHONY : file.i
-
-# target to preprocess a source file
-file.cpp.i:
-	$(MAKE) -f CMakeFiles\Cheaters.dir\build.make CMakeFiles/Cheaters.dir/file.cpp.i
-.PHONY : file.cpp.i
-
-file.s: file.cpp.s
-
-.PHONY : file.s
-
-# target to generate assembly for a file
-file.cpp.s:
-	$(MAKE) -f CMakeFiles\Cheaters.dir\build.make CMakeFiles/Cheaters.dir/file.cpp.s
-.PHONY : file.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -185,9 +158,6 @@ help:
 	@echo ... edit_cache
 	@echo ... Cheaters
 	@echo ... rebuild_cache
-	@echo ... file.obj
-	@echo ... file.i
-	@echo ... file.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

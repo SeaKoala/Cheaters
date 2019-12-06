@@ -88,9 +88,13 @@ public:
         }
     }
 
+    vector <int> copyCounts;
+    vector <string> sources;
+
 private:
     string fName;
     int wordCount;
+
 //    vector <string> chunks;
 };
 

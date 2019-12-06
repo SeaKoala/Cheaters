@@ -80,16 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/hashEntry.h">
-			<Option target="Cheaters"/>
-		</Unit>
-		<Unit filename="C:/Users/SeaKoala/Documents/College/312/Cheaters/file.cpp">
-			<Option target="Cheaters"/>
-		</Unit>
 		<Unit filename="C:/Users/SeaKoala/Documents/College/312/Cheaters/file.h">
 			<Option target="Cheaters"/>
 		</Unit>
+		<Unit filename="C:/Users/SeaKoala/Documents/College/312/Cheaters/hashEntry.h">
+			<Option target="Cheaters"/>
+		</Unit>
 		<Unit filename="C:/Users/SeaKoala/Documents/College/312/Cheaters/main.cpp">
+			<Option target="Cheaters"/>
+		</Unit>
+		<Unit filename="C:/Users/SeaKoala/Documents/College/312/Cheaters/plag.h">
 			<Option target="Cheaters"/>
 		</Unit>
 		<Unit filename="C:/Users/SeaKoala/Documents/College/312/Cheaters/CMakeLists.txt">
