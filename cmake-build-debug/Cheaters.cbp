@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/SeaKoala/Documents/College/312/Cheaters/cmake-build-debug/hashEntry.h">
+			<Option target="Cheaters"/>
+		</Unit>
 		<Unit filename="C:/Users/SeaKoala/Documents/College/312/Cheaters/file.cpp">
 			<Option target="Cheaters"/>
 		</Unit>

@@ -18,6 +18,18 @@ fstream
 algorithm
 -
 
+C:/Users/SeaKoala/Documents/College/312/Cheaters/hashEntry.h
+iostream
+-
+string
+-
+vector
+-
+fstream
+-
+algorithm
+-
+
 C:/Users/SeaKoala/Documents/College/312/Cheaters/main.cpp
 iostream
 -
@@ -41,4 +53,6 @@ dirent.h
 -
 file.h
 C:/Users/SeaKoala/Documents/College/312/Cheaters/file.h
+hashEntry.h
+C:/Users/SeaKoala/Documents/College/312/Cheaters/hashEntry.h
 

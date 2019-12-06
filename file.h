@@ -20,6 +20,10 @@ public:
         wordCount = setWordCount();
     }
 
+    void setName(string name){
+        fName = name;
+    }
+
     string getName() const {
         return fName;
     }
@@ -43,45 +47,51 @@ public:
         return this->wordCount;
     }
 
-    int printChunks() {
-        for(int i =0; i<chunks.size(); i++){
-            cout<<chunks[i]<<endl;
-        }
-        return 0;
-    }
+//    int printChunks() {
+//        for(int i =0; i<chunks.size(); i++){
+//            cout<<chunks[i]<<endl;
+//        }
+//        return 0;
+//    }
 
-    int parse(int n, int start)
+//    int getChunkCount() {
+//        return chunks.size();
+//    }
+
+    string parse(int n, int start)
     {
         int count =0;
         fstream file;
         string phrase, word;
         file.open(this->fName.c_str());
-        while (file >> word)
-        {
-            if(start> count){
-                count++;
-                continue;
-            }
-            phrase += word;
-            count++;
-            if((count-start)%n == 0){
-                transform(phrase.begin(), phrase.end(), phrase.begin(), ::toupper);
-                for(int i=0; i< phrase.size(); i++){
-                    if(phrase[i] < 'A' || phrase[i] >'Z'){
-                        phrase.erase(phrase.begin()+i);
-                    }
+        if(file.is_open()) {
+            while (file >> word) {
+                if (start > count) {
+                    count++;
+                    continue;
                 }
-                chunks.push_back(phrase);
-                break;
+                phrase += word;
+                count++;
+                if ((count - start) % n == 0) {
+                    transform(phrase.begin(), phrase.end(), phrase.begin(), ::toupper);
+                    for (int i = 0; i < phrase.size(); i++) {
+                        if (phrase[i] < 'A' || phrase[i] > 'Z') {
+                            phrase.erase(phrase.begin() + i);
+                        }
+                    }
+                    return phrase;
+                }
             }
         }
-        return 0;
+        else{
+            return "FAIL TO PARSE\n";
+        }
     }
 
 private:
     string fName;
     int wordCount;
-    vector <string> chunks;
+//    vector <string> chunks;
 };
 
 #endif //CHEATERS_FILE_H
